@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2012126174_PER
+namespace _2012126174_ENT.Entities.IRepositories
 {
-    public class Class1
+    public interface IVentaRepository : IRepository<Venta>
     {
     }
 }
