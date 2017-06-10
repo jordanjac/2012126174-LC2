@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9E5C84FD-7379-4E05-BA7E-7581C6C07EDB}</ProjectGuid>
+    <ProjectGuid>{F68CE2C7-47E2-41B0-B273-7FC747BFC9F3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2012126174_CON</RootNamespace>
-    <AssemblyName>2012126174-CON</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RootNamespace>_2014118110_CON</RootNamespace>
+    <AssemblyName>2014118110-CON</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -47,6 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\2012126174-ENT\2012126174-ENT.csproj">
+      <Project>{90563452-bfe5-479b-96ab-28166ad2ab64}</Project>
+      <Name>2014118110-ENT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\2012126174-PER\2012126174-PER.csproj">
+      <Project>{2b190291-8f73-4db9-bb55-27f0d9f12a5e}</Project>
+      <Name>2014118110-PER</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

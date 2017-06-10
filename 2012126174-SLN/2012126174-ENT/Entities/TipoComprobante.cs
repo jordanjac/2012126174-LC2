@@ -9,9 +9,14 @@ namespace _2012126174_ENT
     public class TipoComprobante
     {
         public int TipoComprobanteId { get; set; }
-        public string Descripcion { get; set; }
+        public string NombreComprobante { get; set; }
 
-        public int VentaId { get; set; }
-        public Venta Venta { get; set; }
+        public virtual int VentaId { get; set; }
+        public virtual Venta Venta { get; set; }
+
+        public TipoComprobante()
+        {
+
+        }
     }
 }

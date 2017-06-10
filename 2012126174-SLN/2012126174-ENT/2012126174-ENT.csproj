@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2497150-5650-44EB-816D-962276A639A8}</ProjectGuid>
+    <ProjectGuid>{90563452-BFE5-479B-96AB-28166AD2AB64}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_2012126174_ENT</RootNamespace>
-    <AssemblyName>2012126174-ENT</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RootNamespace>_2014118110_ENT</RootNamespace>
+    <AssemblyName>2014118110-ENT</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -40,29 +40,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\AdministrativoDTO.cs" />
+    <Compile Include="DTO\BusDTO.cs" />
+    <Compile Include="DTO\ClienteDTO.cs" />
+    <Compile Include="DTO\EmpleadoDTO.cs" />
+    <Compile Include="DTO\EncomiendaDTO.cs" />
+    <Compile Include="DTO\LugarViajeDTO.cs" />
+    <Compile Include="DTO\ServicioDTO.cs" />
+    <Compile Include="DTO\TipoComprobanteDTO.cs" />
+    <Compile Include="DTO\TipoLugarDTO.cs" />
+    <Compile Include="DTO\TipoPagoDTO.cs" />
+    <Compile Include="DTO\TipoTripulacionDTO.cs" />
+    <Compile Include="DTO\TipoViajeDTO.cs" />
+    <Compile Include="DTO\TransporteDTO.cs" />
+    <Compile Include="DTO\TripulacionDTO.cs" />
+    <Compile Include="DTO\VentaDTO.cs" />
     <Compile Include="Entities\Administrativo.cs" />
     <Compile Include="Entities\Bus.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Empleado.cs" />
     <Compile Include="Entities\Encomienda.cs" />
-    <Compile Include="IRepositories\IAdministrativoRepository.cs" />
+    <Compile Include="Entities\LugarViaje.cs" />
     <Compile Include="IRepositories\IBusRepository.cs" />
     <Compile Include="IRepositories\IClienteRepository.cs" />
     <Compile Include="IRepositories\IEmpleadoRepository.cs" />
     <Compile Include="IRepositories\IEncomiendaRepository.cs" />
     <Compile Include="IRepositories\ILugarViajeRepository.cs" />
-    <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="IRepositories\IServicioRepository.cs" />
     <Compile Include="IRepositories\ITipoComprobanteRepository.cs" />
     <Compile Include="IRepositories\ITipoLugarRepository.cs" />
     <Compile Include="IRepositories\ITipoPagoRepository.cs" />
     <Compile Include="IRepositories\ITipoTripulacionRepository.cs" />
     <Compile Include="IRepositories\ITipoViajeRepository.cs" />
-    <Compile Include="IRepositories\ITransporteRepository.cs" />
     <Compile Include="IRepositories\ITripulacionRepository.cs" />
-    <Compile Include="IRepositories\IVentaRepository.cs" />
-    <Compile Include="Entities\LugarViaje.cs" />
     <Compile Include="IRepositories\IUnityOfWork.cs" />
+    <Compile Include="IRepositories\IVentaRepository.cs" />
+    <Compile Include="IRepositories\ITransporteRepository.cs" />
+    <Compile Include="IRepositories\IAdministrativoRepository.cs" />
+    <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Servicio.cs" />
     <Compile Include="Entities\TipoComprobante.cs" />
@@ -74,5 +89,6 @@
     <Compile Include="Entities\Tripulacion.cs" />
     <Compile Include="Entities\Venta.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

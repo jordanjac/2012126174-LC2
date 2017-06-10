@@ -9,19 +9,17 @@ namespace _2012126174_ENT
     public class LugarViaje
     {
         public int LugarViajeId { get; set; }
-        public string Descripcion { get; set; }
+        public string NombreLugar { get; set; }
 
-        public int TransporteId { get; set; }
-        public Transporte Transporte { get; set; }
+        public virtual int ServicioId { get; set; }
+        public virtual Servicio Servicio { get; set; }
 
-        public int EncomiendaId { get; set; }
-        public Encomienda Encomienda { get; set; }
-
-        public List<TipoLugar> TipoLugars { get; set; }
+        public virtual ICollection<TipoLugar> TipoLugar { get; set; }
 
         public LugarViaje()
         {
-            TipoLugars = new List<TipoLugar>();
+            TipoLugar = new List<TipoLugar>();
         }
+
     }
 }

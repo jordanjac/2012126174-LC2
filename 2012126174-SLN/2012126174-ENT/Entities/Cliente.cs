@@ -10,13 +10,18 @@ namespace _2012126174_ENT
     {
         public int ClienteId { get; set; }
         public string Nombre { get; set; }
-        public string ApePaterno { get; set; }
-        public string ApeMaterno { get; set; }
+        public string Apellidos { get; set; }
+        public string DNI { get; set; }
 
-        public int VentaId { get; set; }
-        public Venta Venta { get; set; }
+        public virtual int VentaId { get; set; }
+        public virtual Venta Venta { get; set; }
 
-        public int TransporteId { get; set; }
-        public Transporte Transporte { get; set; }
+        public virtual int ServicioId { get; set; }
+        public virtual Servicio Servicio { get; set; }
+
+        public Cliente()
+        {
+
+        }
     }
 }

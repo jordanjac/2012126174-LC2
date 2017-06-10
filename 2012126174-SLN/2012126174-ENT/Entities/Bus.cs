@@ -10,17 +10,17 @@ namespace _2012126174_ENT
     {
         public int BusId { get; set; }
         public string Placa { get; set; }
-        public string Modelo { get; set; }
+        public string SerieMotor { get; set; }
 
-        private List<Tripulacion> _Tripulacions;
-        public List<Tripulacion> Tripulacions { get; set; }
+        public virtual int ServicioId { get; set; }
+        public virtual Servicio Servicio { get; set; }
 
-        public Bus(List<Tripulacion> tripulacions)
+        public virtual ICollection<Tripulacion> Tripulacion { get; set; }
+
+        public Bus()
         {
-            Tripulacions = tripulacions;
+            Tripulacion = new List<Tripulacion>();
         }
-
-
 
     }
 }

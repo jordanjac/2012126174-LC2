@@ -6,28 +6,18 @@ using System.Threading.Tasks;
 
 namespace _2012126174_ENT
 {
-    public class Empleado
+    public abstract class Empleado
     {
         public int EmpleadoId { get; set; }
-        public long Codigo { get; set; }
         public string Nombre { get; set; }
-        public string ApePaterno { get; set; }
-        public string ApeMaterno { get; set; }
-        public string Correo { get; set; }
+        public string Apellidos { get; set; }
+        public string DNI { get; set; }
+        public int Edad { get; set; }
+        public decimal Sueldo { get; set; }
 
         public Empleado()
         {
-
+            
         }
-
-        public Empleado(long cod, string nom, string aPat, string aMat, string mail)
-        {
-            Codigo = cod;
-            Nombre = nom;
-            ApePaterno = aPat;
-            ApeMaterno = aMat;
-            Correo = mail;
-        }
-
     }
 }

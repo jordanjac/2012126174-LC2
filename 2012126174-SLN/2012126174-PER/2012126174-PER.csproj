@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7355A17A-9C58-45BD-BAF4-68C0CDF8F6CE}</ProjectGuid>
+    <ProjectGuid>{2B190291-8F73-4DB9-BB55-27F0D9F12A5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_2012126174_PER</RootNamespace>
-    <AssemblyName>2012126174-PER</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RootNamespace>_2014118110_PER</RootNamespace>
+    <AssemblyName>2014118110-PER</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -47,60 +47,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntitiesConfigurations\AdministrativoConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\BusConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\ClienteConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\EmpleadoConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\EncomiendaConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\LugarViajeConfiguration.cs" />
-    <Compile Include="Repositories\AdministrativoRepository.cs" />
-    <Compile Include="Repositories\BusRepository.cs" />
-    <Compile Include="Repositories\ClienteRepository.cs" />
-    <Compile Include="Repositories\EmpleadoRepository.cs" />
-    <Compile Include="Repositories\EncomiendaRepository.cs" />
-    <Compile Include="Repositories\LugarViajeRepository.cs" />
-    <Compile Include="Repositories\Repository.cs" />
-    <Compile Include="Repositories\ServicioRepository.cs" />
-    <Compile Include="Repositories\TipoComprobanteRepository.cs" />
-    <Compile Include="Repositories\TipoLugarRepository.cs" />
-    <Compile Include="Repositories\TipoPagoRepository.cs" />
-    <Compile Include="Repositories\TipoTripulacionRepository.cs" />
-    <Compile Include="Repositories\TipoViajeRepository.cs" />
-    <Compile Include="Repositories\TransporteRepository.cs" />
-    <Compile Include="Repositories\TripulacionRepository.cs" />
-    <Compile Include="Repositories\UnityOfWork.cs" />
-    <Compile Include="Repositories\VentaRepository.cs" />
-    <Compile Include="EntitiesConfigurations\ServicioConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\TipoComprobanteConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\TipoLugarConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\TipoPagoConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\TipoTripulacionConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\TipoViajeConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\TransporteConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\TripulacionConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\VentaConfiguration.cs" />
-    <Compile Include="Migrations\201705152124235_ModeloInicial.cs" />
-    <Compile Include="Migrations\201705152124235_ModeloInicial.Designer.cs">
-      <DependentUpon>201705152124235_ModeloInicial.cs</DependentUpon>
+    <Compile Include="EntititesConfiguration\VentaConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\TipoViajeConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\TipoTripulacionConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\TipoPagoConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\TipoLugarConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\TipoComprobanteConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\ServicioConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\LugarViajeConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\EmpleadoConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\ClienteConfiguration.cs" />
+    <Compile Include="EntititesConfiguration\BusConfiguration.cs" />
+    <Compile Include="Migrations\201705310946557_InitialModel.cs" />
+    <Compile Include="Migrations\201705310946557_InitialModel.Designer.cs">
+      <DependentUpon>201705310946557_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706050258572_UpdateChanges.cs" />
+    <Compile Include="Migrations\201706050258572_UpdateChanges.Designer.cs">
+      <DependentUpon>201706050258572_UpdateChanges.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Repositories\BusRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository.cs" />
+    <Compile Include="Repositories\TripulacionRepository.cs" />
+    <Compile Include="Repositories\TransporteRepository.cs" />
+    <Compile Include="Repositories\TipoViajeRepository.cs" />
+    <Compile Include="Repositories\TipoTripulacionRepository.cs" />
+    <Compile Include="Repositories\TipoPagoRepository.cs" />
+    <Compile Include="Repositories\TipoLugarRepository.cs" />
+    <Compile Include="Repositories\TipoComprobanteRepository.cs" />
+    <Compile Include="Repositories\ServicioRepository.cs" />
+    <Compile Include="Repositories\LugarViajeRepository.cs" />
+    <Compile Include="Repositories\EncomiendaRepository.cs" />
+    <Compile Include="Repositories\EmpleadoRepository.cs" />
+    <Compile Include="Repositories\AdministrativoRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\UnityOfWork.cs" />
+    <Compile Include="Repositories\VentaRepository.cs" />
     <Compile Include="TransporteDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\2012126174-ENT\2012126174-ENT.csproj">
+      <Project>{90563452-bfe5-479b-96ab-28166ad2ab64}</Project>
+      <Name>2014118110-ENT</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\2012126174-ENT\2012126174-ENT.csproj">
-      <Project>{b2497150-5650-44eb-816d-962276a639a8}</Project>
-      <Name>2012126174-ENT</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705152124235_ModeloInicial.resx">
-      <DependentUpon>201705152124235_ModeloInicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705310946557_InitialModel.resx">
+      <DependentUpon>201705310946557_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706050258572_UpdateChanges.resx">
+      <DependentUpon>201706050258572_UpdateChanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

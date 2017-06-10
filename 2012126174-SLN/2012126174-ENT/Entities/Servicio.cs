@@ -6,27 +6,23 @@ using System.Threading.Tasks;
 
 namespace _2012126174_ENT
 {
-    public class Servicio
+    public abstract class Servicio
     {
         public int ServicioId { get; set; }
-        public string Descripcion { get; set; }
-        public double Precio { get; set; }
+        public string NombreServicio { get; set; }
+        public decimal Tarifa { get; set; }
 
-        public int VentaId { get; set; }
-        public Venta Venta { get; set; }
+        public virtual int VentaId { get; set; }
+        public virtual Venta Venta { get; set; }
+
+        public virtual ICollection<Bus> Bus { get; set; }
+        public virtual ICollection<LugarViaje> LugarViaje { get; set; }
 
         public Servicio()
         {
-
+            Bus = new List<Bus>();
+            LugarViaje = new List<LugarViaje>();
         }
-
-        public Servicio(string desc, double prec)
-        {
-            Descripcion = desc;
-            Precio = prec;
-        }
-
-
 
     }
 }

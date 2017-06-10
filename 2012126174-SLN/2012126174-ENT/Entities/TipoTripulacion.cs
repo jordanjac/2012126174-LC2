@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,12 @@ namespace _2012126174_ENT
         public int TipoTripulacionId { get; set; }
         public string Descripcion { get; set; }
 
-        public int TripulacionId { get; set; }
-        public Tripulacion Tripulacion { get; set; }
+        public virtual int TripulacionId { get; set; }
+        public virtual Tripulacion Tripulacion { get; set; }
+
+        public TipoTripulacion()
+        {
+
+        }
     }
 }

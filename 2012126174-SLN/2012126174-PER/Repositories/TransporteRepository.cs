@@ -1,50 +1,19 @@
 ﻿using _2012126174_ENT;
-using _2012126174_ENT.Entities.IRepositories;
+using _2012126174_ENT.IRepositories;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2012126174_PER.EntitiesConfigurations.Repositories
+namespace _2012126174_PER.Repositories
 {
     public class TransporteRepository : Repository<Transporte>, ITransporteRepository
     {
-        private readonly TransporteDbContext _Context;
-
-        public TransporteRepository(TransporteDbContext context)
+        public TransporteRepository(DbContext context) : base(context)
         {
-            _Context = context;
         }
 
-        private TransporteRepository()
-        {
-
-        }
-
-        public IEnumerable<Transporte> GetTransporteByBys(Bus bus)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Transporte> GetTransporteByCliente(Cliente cliente)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Transporte> GetTransporteByLugarViaje(LugarViaje lugarviaje)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Transporte> GetTransporteByServicio(Servicio servicio)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Transporte> GetTransporteByTipoViaje(TipoViaje tipoviaje)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

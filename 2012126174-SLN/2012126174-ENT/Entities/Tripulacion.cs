@@ -8,22 +8,16 @@ namespace _2012126174_ENT
 {
     public class Tripulacion : Empleado
     {
-        public int TripulacionId { get; set; }
-        public string Cargo { get; set; }
+        public string NombreTripulacion { get; set; }
 
-        public List<TipoTripulacion> TipoTripulacions { get; set; }
+        public virtual int BusId { get; set; }
+        public virtual Bus Bus { get; set; }
 
+        public virtual ICollection<TipoTripulacion> TipoTripulacion { get; set; }
 
         public Tripulacion()
         {
-
+            TipoTripulacion = new List<TipoTripulacion>();
         }
-
-        public Tripulacion(long cod, string nom, string aPat, string aMat, string mail) : base(cod, nom, aPat, aMat, mail)
-        {
-            TipoTripulacions = new List<TipoTripulacion>();
-        }
-
-      
     }
 }
